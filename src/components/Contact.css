@@ -1,0 +1,17 @@
+.contact {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.contact__body {
+  max-width: 48ch;
+  margin: 0;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}

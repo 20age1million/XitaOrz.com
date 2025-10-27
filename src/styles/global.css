@@ -1,0 +1,45 @@
+:root {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color-scheme: light;
+  background-color: #f8fafc;
+  color: #111827;
+
+  --foreground: #111827;
+  --muted-foreground: #4b5563;
+  --primary: #2563eb;
+  --border: #e5e7eb;
+  --surface: #ffffff;
+  --chip-background: #edf2ff;
+  --chip-foreground: #1d4ed8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--foreground);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}

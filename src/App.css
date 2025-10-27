@@ -1,0 +1,165 @@
+.page {
+  min-height: 100vh;
+  width: min(900px, 92%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 3rem;
+  gap: 3rem;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  gap: 3rem;
+}
+
+.content-section {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section-heading {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.section-heading__eyebrow {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--muted-foreground);
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(1.85rem, 4vw, 2.25rem);
+  color: var(--foreground);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  padding: 0.65rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--foreground);
+  background: var(--surface);
+}
+
+.button--primary {
+  border-color: var(--primary);
+  color: #ffffff;
+  background: var(--primary);
+}
+
+.button--primary:hover {
+  opacity: 0.9;
+}
+
+.card-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .card-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  background: var(--surface);
+  display: grid;
+  gap: 1rem;
+}
+
+.card__header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card__meta {
+  margin: 0.35rem 0 0;
+  color: var(--muted-foreground);
+  font-size: 0.9rem;
+}
+
+.card__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted-foreground);
+  display: grid;
+  gap: 0.45rem;
+}
+
+.card__footer {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted-foreground);
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.pill-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill-list li {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--chip-background);
+  color: var(--chip-foreground);
+  font-size: 0.85rem;
+}
+
+.writing-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.writing-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 0.95rem;
+}
+
+.writing-list__status {
+  color: var(--muted-foreground);
+  font-size: 0.85rem;
+}
