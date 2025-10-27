@@ -1,13 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#a855f7" />
+    <linearGradient id="cy-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
   </defs>
-  <rect width="128" height="128" rx="28" fill="url(#grad)" />
+  <rect width="128" height="128" rx="28" fill="url(#cy-gradient)" />
   <path
-    d="M64 34c14.4 0 25 8.8 25 22.3 0 8.2-4.2 14.7-11.6 18l11.6 19.7H74.2l-9.3-17.3h-0.2l-9.2 17.3H39l11.4-19.7C43 71 39 64.4 39 56.3 39 42.8 49.6 34 64 34Zm0 13.3c-7 0-11.7 4-11.7 9.6 0 5.5 4.7 9.5 11.7 9.5s11.7-4 11.7-9.5c0-5.6-4.7-9.6-11.7-9.6Z"
-    fill="#fff"
+    d="M52 34c-18 0-30 13.6-30 30s12 30 30 30c9.5 0 17-4.1 21.6-11.2l-9.4-5.2c-2.6 4.2-6.4 6.5-11.2 6.5-9.6 0-15.4-7.8-15.4-20.1S43.4 44 52 44c5.1 0 8.9 2.3 11.4 7l9.4-5.6C69.3 39.2 61.7 34 52 34Z"
+    fill="#f8fafc"
+  />
+  <path
+    d="M88 34h12l-13 24v32h-10V58l-13-24h12l6 12 6-12Z"
+    fill="#60a5fa"
   />
 </svg>

@@ -1,0 +1,7 @@
+services:
+  site:
+    build: .
+    container_name: xitaorz-site
+    ports:
+      - "6050:80"
+    restart: unless-stopped
