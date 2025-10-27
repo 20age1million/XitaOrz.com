@@ -39,7 +39,7 @@ export function Hero(): JSX.Element {
         >
           GitHub
         </a>
-        <a className="button" href="../assets/Youyi Yan Resume.pdf">
+        <a className="button" href="https://cloud.20age1million.com/f/1pcj/Youyi_Yan_Resume.pdf">
           Resume
         </a>
       </div>
