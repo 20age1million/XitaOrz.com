@@ -1,5 +1,4 @@
 # XitaOrz.com
-
-Personal website for Carl Yan, built with React, TypeScript, and Vite.
+Carl Yan's personal website, built with React, TypeScript, and Vite.
 
 
