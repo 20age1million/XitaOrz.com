@@ -1,5 +1,6 @@
 .hero {
-  padding: 3rem 0 2rem;
+  padding: 1rem 0 2rem;
+  scroll-margin-top: 5rem;
   display: grid;
   gap: 1.5rem;
   text-align: left;
@@ -27,7 +28,7 @@
 
 .hero__headline {
   margin: 0;
-  font-size: clamp(2.25rem, 6vw, 2.9rem);
+  font-size: clamp(1.9rem, 6vw, 2.9rem);
   line-height: 1.1;
 }
 
@@ -59,10 +60,27 @@
   border: 1px solid var(--border);
   font-size: 0.85rem;
   color: var(--muted-foreground);
+  overflow-wrap: anywhere;
 }
 
 .hero__links {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+}
+
+@media (max-width: 420px) {
+  .hero__avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 1.2rem;
+  }
+
+  .hero__profile {
+    gap: 1rem;
+  }
+
+  .hero__links .button {
+    flex: 1 1 8rem;
+  }
 }

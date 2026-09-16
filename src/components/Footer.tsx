@@ -5,16 +5,18 @@ export function Footer(): JSX.Element {
 
   return (
     <footer className="footer">
-      <p>© {year} Carl Yan. Crafted with curiosity in React and TypeScript.</p>
-      <p>Credits to: ChatGPT my React and TS Teacher</p>
+      <p>© {year} Carl (Youyi) Yan.</p>
       <div className="footer__links">
         <a href="https://github.com/XitaOrz" target="_blank" rel="noreferrer">
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/youyi-yan-17b9942a9/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/youyi-yan-17b9942a9/"
+          target="_blank"
+          rel="noreferrer"
+        >
           LinkedIn
         </a>
-        <p>(506) 470-2888</p>
       </div>
     </footer>
   );

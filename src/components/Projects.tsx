@@ -1,14 +1,8 @@
+import type { ProjectItem } from "../data/portfolio";
 import "./Projects.css";
 
-type Project = {
-  title: string;
-  description: string;
-  stack: readonly string[];
-  link: string;
-};
-
 type ProjectsProps = {
-  projects: readonly Project[];
+  projects: readonly ProjectItem[];
 };
 
 export function Projects({ projects }: ProjectsProps): JSX.Element {
@@ -16,11 +10,16 @@ export function Projects({ projects }: ProjectsProps): JSX.Element {
     <section id="projects" className="projects content-section">
       <div className="section-heading">
         <h2>Projects</h2>
-        <span className="section-subtitle">Practical builds and experiments</span>
+        <span className="section-subtitle">Software, systems, and application projects</span>
       </div>
       <div className="projects__grid">
         {projects.map((project) => (
-          <article key={project.title} className="project-card">
+          <article
+            key={project.title}
+            className={
+              project.featured ? "project-card project-card--featured" : "project-card"
+            }
+          >
             <div className="project-card__content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
@@ -30,7 +29,7 @@ export function Projects({ projects }: ProjectsProps): JSX.Element {
                 <li key={tool}>{tool}</li>
               ))}
             </ul>
-            {project.link !== "#" && (
+            {project.link && (
               <a
                 className="project-card__link"
                 href={project.link}
