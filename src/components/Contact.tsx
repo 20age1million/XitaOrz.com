@@ -7,12 +7,32 @@ export function Contact(): JSX.Element {
         <h2>Contact Me</h2>
       </div>
       <p className="contact__body">
-        I&apos;m currently seeking opportunities in backend, full-stack, and application development.  
-        If you&apos;d like to collaborate or discuss potential roles, feel free to reach out—I&apos;d love to connect.
+        I&apos;m interested in software engineering opportunities involving backend
+        systems, full-stack development, infrastructure, networking, or AI-integrated
+        applications. Feel free to reach out if you&apos;d like to discuss a role or
+        project.
       </p>
-      <a className="button button--primary" href="mailto:carlyan6636@gmail.com">
-        Email me: carlyan6636@gmail.com
-      </a>
+      <div className="contact__links">
+        <a className="button button--primary" href="mailto:carlyan6636@gmail.com">
+          Email me: carlyan6636@gmail.com
+        </a>
+        <a
+          className="button"
+          href="https://github.com/XitaOrz"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          className="button"
+          href="https://www.linkedin.com/in/youyi-yan-17b9942a9/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
     </section>
   );
 }

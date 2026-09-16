@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 2rem 0 3rem;
+  padding: 0 0 3rem;
   gap: 3rem;
 }
 
@@ -17,6 +17,7 @@ main {
 .content-section {
   display: grid;
   gap: 1.5rem;
+  scroll-margin-top: 5rem;
 }
 
 .section-heading {
@@ -35,6 +36,12 @@ main {
   margin: 0;
   font-size: clamp(1.85rem, 4vw, 2.25rem);
   color: var(--foreground);
+}
+
+.section-subtitle {
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 .button {
@@ -57,19 +64,18 @@ main {
   background: var(--primary);
 }
 
+.button:hover {
+  border-color: var(--primary);
+}
+
 .button--primary:hover {
   opacity: 0.9;
 }
 
-.card-list {
-  display: grid;
-  gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .card-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
 }
 
 .card {
@@ -92,12 +98,18 @@ main {
   font-size: 0.9rem;
 }
 
+.card__body {
+  margin: 0;
+  color: var(--muted-foreground);
+  line-height: 1.55;
+}
+
 .card__list {
   margin: 0;
   padding-left: 1.1rem;
   color: var(--muted-foreground);
   display: grid;
-  gap: 0.45rem;
+  gap: 0.6rem;
 }
 
 .card__footer {
@@ -138,28 +150,5 @@ main {
   background: var(--chip-background);
   color: var(--chip-foreground);
   font-size: 0.85rem;
-}
-
-.writing-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 0.5rem;
-}
-
-.writing-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--surface);
-  font-size: 0.95rem;
-}
-
-.writing-list__status {
-  color: var(--muted-foreground);
-  font-size: 0.85rem;
+  overflow-wrap: anywhere;
 }

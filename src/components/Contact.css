@@ -15,3 +15,10 @@
   color: var(--muted-foreground);
   line-height: 1.5;
 }
+
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
