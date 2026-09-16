@@ -112,6 +112,13 @@ export const projects: readonly ProjectItem[] = [
     link: "https://github.com/Xitaorz/Resonate"
   },
   {
+    title: "QQ Music → Spotify Transfer",
+    description:
+      "Built a Go CLI that imports QQ Music playlists into Spotify by metadata matching rather than ID translation. Implemented the Spotify OAuth 2.0 authorization code flow, throttled Web API search, and a matcher that scores candidates on normalized title, artist, album, live markers, and duration, with dry runs, resumable JSON match reports, and unit tests across the matching and API layers.",
+    stack: ["Go", "OAuth 2.0", "REST API", "CLI"],
+    link: "https://github.com/Xitaorz/QQmusic-to-Spotify"
+  },
+  {
     title: "Spinema",
     description:
       "Developed an Android group movie-selection app in Kotlin, implementing room creation, voting, weighted selection, and the supporting application architecture and UI flows.",
