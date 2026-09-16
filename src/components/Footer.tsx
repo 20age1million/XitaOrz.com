@@ -5,7 +5,7 @@ export function Footer(): JSX.Element {
 
   return (
     <footer className="footer">
-      <p>© {year} Carl (Youyi) Yan. Built with React, TypeScript, and Vite.</p>
+      <p>© {year} Carl (Youyi) Yan.</p>
       <div className="footer__links">
         <a href="https://github.com/XitaOrz" target="_blank" rel="noreferrer">
           GitHub
